@@ -1,3 +1,4 @@
+from abc import abstractmethod, ABC
 from collections import UserDict
 from datetime import datetime
 import pickle
@@ -15,15 +16,13 @@ class AddressBook(UserDict):
     def add_record(self, record):
         self.data[record.name.value] = record
 
-
-
-
-
+    def del_record(self, record):
+        self.data.pop(record.name.value)
 
     def save_contacts(self):
         if self.data:
             with open("save_file.txt", "wb") as file:
-                contacts = pickle.dump(self.data, file)
+                pickle.dump(self.data, file)
 
 
 class Record:
@@ -36,7 +35,6 @@ class Record:
         self.address = Address(address) if address else ""
         self.tag = {}
 
-
     def add_birthday(self, birthday):
         self.birthday = Birthday(birthday).value.strftime('%d.%m.%Y')
 
@@ -47,6 +45,7 @@ class Record:
         self.note = Note(note).value
 
     def add_tag(self, tag):
+        self.tag["name"] = self.name.value
         self.tag["tag"] = tag
         self.tag["note"] = self.note
 
@@ -92,11 +91,8 @@ class Record:
             else:
                 diference = (
                     ((birthday).replace(year=(datetime.now()).year + 1)) - datetime.now()).days
-            if diference == interval:
+            if diference <= interval:
                 print(f"{(self.name.value).capitalize()}, birthday: {self.birthday}")
-            
-        else:
-            raise TypeError
 
 
 class Field:
@@ -140,7 +136,6 @@ class Birthday(Field):
         return datetime.strftime(self._value, '%d.%m.%Y')
 
 
-
 class Email(Field):
     @Field.value.setter
     def value(self, value: str):
@@ -149,15 +144,90 @@ class Email(Field):
                 print("Your email should be like this: example@gmail.com"))
         self._value = value
 
+    def __str__(self) -> str:
+        return (self.value)
+
 
 class Note(Field):
     pass
-    # def __init__(self, value):
-    #     super().__init__()
 
 
 class Address(Field):
-    
     pass
-    # def __init__(self, value):
-    #     super().__init__()
+
+
+class IBot(ABC):
+    @abstractmethod
+    def show_contacts(self):
+        pass
+
+    @abstractmethod
+    def show_notes(self):
+        pass
+
+    @abstractmethod
+    def show_tags(self):
+        pass
+
+    @abstractmethod
+    def show_address(self):
+        pass
+
+    @abstractmethod
+    def show_emails(self):
+        pass
+
+
+class Bot(IBot):
+    def __init__(self, data) -> None:
+        self.data = data
+
+    def show_contacts(self):
+        for name in self.data:
+            print("{:<10}{:^35}{:>10}".format((self.data[name].name.value).capitalize(),
+            " ".join([phone.value for phone in self.data[name].phones]), self.data[name].birthday)) 
+
+    def show_notes(self):
+        show_list = []
+        for name in self.data:
+            if self.data[name].note:
+                show_list.append(f"name: {(self.data[name].name.value).capitalize()}, note: {self.data[name].note}")
+        if show_list:
+            for item in show_list:
+                print(item)
+        else:
+            raise TypeError
+
+    def show_tags(self):
+        show_list = []
+        for name in self.data:
+            if self.data[name].tag:
+                show_list.append(self.data[name].tag)
+        if show_list:
+            show_list = sorted(show_list, key=lambda x: x['tag'])
+            for item in show_list:
+                print(item)
+        else:
+            raise TypeError
+    
+    def show_address(self):
+        show_list = []
+        for name in self.data:
+            if self.data[name].address:
+                show_list.append(f"name: {(self.data[name].name.value).capitalize()}, address: {self.data[name].address.value}")
+        if show_list:
+                for item in show_list:
+                    print(item)
+        else:
+            raise TypeError
+
+    def show_emails(self):
+        show_list = []
+        for name in self.data:
+            if self.data[name].email:
+                show_list.append(f"name: {(self.data[name].name.value).capitalize()}, email: {self.data[name].email}")
+        if show_list:
+                for item in show_list:
+                    print(item)
+        else:
+            raise TypeError
