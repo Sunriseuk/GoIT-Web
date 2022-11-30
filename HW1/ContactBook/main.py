@@ -1,6 +1,6 @@
 import re
-from core import *
-from sort import *
+from core import AddressBook, Record, Bot
+from sort import get_main_path
 
 
 CONTACTS = AddressBook()
