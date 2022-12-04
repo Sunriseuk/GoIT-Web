@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "contactbook"
+version = "1.1"
+description = "Chat-Bot"
+authors = ["Mykola Prystash and GoITTeam-4"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
