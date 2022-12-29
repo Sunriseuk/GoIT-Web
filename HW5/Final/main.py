@@ -34,16 +34,22 @@ def get_currencies_data(data: dict, searched_currencies: list[str] = ('USD', 'EU
 #     with open('data.json', 'w') as file:
 #         json.dump(data, file, indent=2)
 
-
 def write_in_json(data: dict) -> None:
-    if os.path.exists('Final/data.json'):
-        json_data: list = json.load(open('Final/data.json'))
-        json_data.append(data)
-    else:
-        json_data: list = [data]
+    json_data: list = json.load(open('data.json'))
+    json_data.append(data)
 
     with open('data.json', 'w') as file:
         json.dump(json_data, file, indent=2)
+
+# def write_in_json(data: dict) -> None:
+#     if os.path.exists('Final/data.json'):
+#         json_data: list = json.load(open('Final/data.json'))
+#         json_data.append(data)
+#     else:
+#         json_data: list = [data]
+
+#     with open('Final/data.json', 'w') as file:
+#         json.dump(json_data, file, indent=2)
 
 
 
