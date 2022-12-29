@@ -1,6 +1,6 @@
 import platform
 import aiohttp, asyncio
-import json
+import json, os
 from pprint import pprint
 from time import time
 from datetime import datetime, timedelta
@@ -28,14 +28,11 @@ def get_currencies_data(data: dict, searched_currencies: list[str] = ('USD', 'EU
 
 
 def write_in_json(data: dict) -> None:
-    if 'data.json':
-        json_data: list = json.load(open('data.json'))
-        json_data.append(data)
-    else:
-        json_data: list = [data]
-
+    json_data: list = json.load(open('data.json'))
+    json_data.append(data)
+    
     with open('data.json', 'w') as file:
-        json.dump(json_data, file, indent=2)
+        json.dump(data, file, indent=2)
 
 
 
