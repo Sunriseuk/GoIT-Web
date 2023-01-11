@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sql"
+version = "0.1.0"
+description = ""
+authors = ["gorandalex <andrii.gorobets@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pypika = "^0.48.9"
+faker = "^15.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,14 @@
+
+
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - ./postgres_data/:/var/lib/postgres/data/
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=develop
+      - POSTGRES_USER=develop
+      - POSTGRES_PASSWORD=develop
+
