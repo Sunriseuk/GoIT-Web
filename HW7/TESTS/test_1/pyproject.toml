@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "test-1"
+version = "0.1.0"
+description = "MSPry"
+authors = ["MSPry"]
+readme = "README.md"
+packages = [{include = "test_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

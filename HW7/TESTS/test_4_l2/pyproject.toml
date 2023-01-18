@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "test-4-l2"
+version = "0.1.0"
+description = ""
+authors = ["MSPry"]
+readme = "README.md"
+packages = [{include = "test_4_l2"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+alembic = "^1.9.2"
+sqlalchemy = "^1.4.46"
+psycopg2 = "^2.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

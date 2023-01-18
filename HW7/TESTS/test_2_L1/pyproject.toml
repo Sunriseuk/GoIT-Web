@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "test-2"
+version = "0.1.0"
+description = "msp"
+authors = ["Mykola Prystash <109032191+Sunriseuk@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "test_2"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^1.4.46"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

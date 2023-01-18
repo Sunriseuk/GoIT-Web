@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "goit-web"
+version = "0.1.0"
+description = ""
+authors = ["Mykola Prystash <109032191+Sunriseuk@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "goit_web"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

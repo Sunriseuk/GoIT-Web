@@ -1,7 +1,7 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import os
 
-template_path = 'test/'
+template_path = 'test_1/'
 
 class CustomHTTPRequestHandler(BaseHTTPRequestHandler):
     
