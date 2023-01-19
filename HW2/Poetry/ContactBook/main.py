@@ -260,7 +260,7 @@ def show_email_handler():
 
 
 COMMANDS = {
-    "hello": [hello_handler, 'show commands'],
+    "hello.py": [hello_handler, 'show commands'],
     "add": [add_contact_handler, '[name] [phone]'],
     "del": [del_contact_handler, '[name]'],
     "add birthday": [add_birthday_handler, '[name] [dd.mm.yyyy]'],

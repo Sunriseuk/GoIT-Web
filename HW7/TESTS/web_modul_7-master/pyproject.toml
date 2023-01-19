@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "modul-7"
+version = "0.1.0"
+description = ""
+authors = ["ortursucceeh <109922331+ortursucceeh@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "modul_7"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^1.4.46"
+alembic = "^1.9.2"
+psycopg2 = "^2.9.5"
+faker = "^16.4.0"
+argparse = "^1.4.0"
+click-shell = "^2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

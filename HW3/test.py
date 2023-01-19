@@ -18,7 +18,7 @@ def factorize(*numbers):
 
 if __name__ == '__main__':
     before = time()
-    print('hello')
+    print('hello.py')
     for i in range(4):
         pr = Process(target=factorize)
         pr.start()
