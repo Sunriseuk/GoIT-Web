@@ -1,7 +1,7 @@
 from mongoengine import *
 from mongoengine.fields import *
 
-connect(host=f"mongodb+srv://mspryst:tq38bIkpcJGUCviq@cluster0.c5xjo1y.mongodb.net/HW8Database?retryWrites=true&w=majority", ssl=True)
+#connect(host=f"mongodb+srv://mspryst:tq38bIkpcJGUCviq@cluster0.c5xjo1y.mongodb.net/HW8Database?retryWrites=true&w=majority", ssl=True)
 
 class Author(Document):
     fullname = StringField(max_length=50, required=True)
