@@ -1,0 +1,18 @@
+.alert-error, .errorlist {
+    color: #8B0000;
+    font-style: italic;
+}
+
+.alert-success {
+    color: #228B22;
+    font-style: italic;
+}
+
+.custom-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+

@@ -1,0 +1,10 @@
+{% extends "quoteapp/base.html" %}
+
+{% block content %}
+    <h1>Quotes</h1>
+     {% for quote in quotes %}
+        <p>Quote: {{ quote.quote }}</p>
+        <p>Author: {{ quote.author.fullname }}</p>
+        <p>Tags: {% for tag in quote.tags.all %}{{ tag.name }}{% if not forloop.last %}, {% endif %}<br>{% endfor %}</p>
+    {% endfor %}
+{% endblock %}

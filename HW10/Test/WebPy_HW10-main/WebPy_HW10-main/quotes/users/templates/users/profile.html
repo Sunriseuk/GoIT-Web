@@ -1,0 +1,23 @@
+{% extends "quoteapp/base.html" %}
+
+{% block content %}
+
+  <div>
+    <h3>Profile: {{user.username}}</h3>
+  </div>
+
+    <h3>Quotes</h3>
+    </header>
+    <main class="container">
+      {% for quote in quotes %}
+          <p>Quote: {{ quote.quote }}</p>
+          <p>Author: {{ quote.author.fullname }}</p>
+          <p>Tags: {% for tag in quote.tags.all %}{{ tag.name }}{% if not forloop.last %},
+              {% endif %}<br>{% endfor %}</p>
+      {% endfor %}
+      </main>
+<hr>
+<form method="post">
+  {% csrf_token %}
+</form>
+{% endblock %}

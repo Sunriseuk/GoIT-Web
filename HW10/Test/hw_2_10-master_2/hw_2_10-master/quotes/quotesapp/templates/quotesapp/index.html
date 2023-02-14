@@ -1,0 +1,46 @@
+{% extends "quotesapp/base.html" %}
+
+{% block content %}
+
+<h1>All tags</h1>
+{% for tag in tags %}
+<h5>{{ tag.name }}</h5>
+{% endfor %}
+
+<h1>All quotes</h1>
+
+{% for quote in quotes %}
+{% for author in authors %}
+
+<div class="card" ,>
+    <div class="card-body">
+        {% if author.id == quote.author.id %}
+        <h5 class="card-title">{{ author.fullname }}</h5>
+        <p class="card-text">{{ quote.text }}</p>
+        <p class="card-text">{{ quote.tags }}</p>
+        <a href="/authors" class="btn btn-primary">More about author</a>
+        <p>---------------------------------------------------</p>
+        {% endif %}
+
+    </div>
+</div>
+
+{% endfor %}
+{% endfor %}
+
+<nav class="list-pages">
+    <ul>
+        {% for p in paginator.page_range %}
+                   {% if page_obj.number == p %}
+        <li class="page-num page-num-selected">{{ p }}</li>
+                   {% else %}
+        <li class="page-num">
+            <a href="?page={{ p }}">{{ p }}</a>
+        </li>
+                   {% endif %}
+        {% endfor %}
+    </ul>
+</nav>
+
+
+{% endblock %}

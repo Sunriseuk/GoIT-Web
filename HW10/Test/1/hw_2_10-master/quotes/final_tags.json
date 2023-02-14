@@ -1,0 +1,961 @@
+[
+  {
+    "model": "quotesapp.tag",
+    "pk": 1,
+    "fields": {
+      "name": "marriage"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 2,
+    "fields": {
+      "name": "navigation"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 3,
+    "fields": {
+      "name": "value"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 4,
+    "fields": {
+      "name": "happiness"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 5,
+    "fields": {
+      "name": "open-mind"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 6,
+    "fields": {
+      "name": "truth"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 7,
+    "fields": {
+      "name": "journey"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 8,
+    "fields": {
+      "name": "world"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 9,
+    "fields": {
+      "name": "deep-thoughts"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 10,
+    "fields": {
+      "name": "dreamers"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 11,
+    "fields": {
+      "name": "writers"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 12,
+    "fields": {
+      "name": "fantasy"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 13,
+    "fields": {
+      "name": "life"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 14,
+    "fields": {
+      "name": "food"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 15,
+    "fields": {
+      "name": "live"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 16,
+    "fields": {
+      "name": "misattributed-eleanor-roosevelt"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 17,
+    "fields": {
+      "name": "courage"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 18,
+    "fields": {
+      "name": "romantic"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 19,
+    "fields": {
+      "name": "lying"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 20,
+    "fields": {
+      "name": "aliteracy"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 21,
+    "fields": {
+      "name": "fairy-tales"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 22,
+    "fields": {
+      "name": "growing-up"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 23,
+    "fields": {
+      "name": "adulthood"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 24,
+    "fields": {
+      "name": "mind"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 25,
+    "fields": {
+      "name": "sinister"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 26,
+    "fields": {
+      "name": "children"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 27,
+    "fields": {
+      "name": "fate"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 28,
+    "fields": {
+      "name": "dumbledore"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 29,
+    "fields": {
+      "name": "troubles"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 30,
+    "fields": {
+      "name": "simplicity"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 31,
+    "fields": {
+      "name": "yourself"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 32,
+    "fields": {
+      "name": "quest"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 33,
+    "fields": {
+      "name": "live-death-love"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 34,
+    "fields": {
+      "name": "success"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 35,
+    "fields": {
+      "name": "edison"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 36,
+    "fields": {
+      "name": "philosophy"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 37,
+    "fields": {
+      "name": "lack-of-love"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 38,
+    "fields": {
+      "name": "novelist-quotes"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 39,
+    "fields": {
+      "name": "education"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 40,
+    "fields": {
+      "name": "library"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 41,
+    "fields": {
+      "name": "romance"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 42,
+    "fields": {
+      "name": "understanding"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 43,
+    "fields": {
+      "name": "obvious"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 44,
+    "fields": {
+      "name": "misattributed-to-einstein"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 45,
+    "fields": {
+      "name": "alcohol"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 46,
+    "fields": {
+      "name": "be-yourself"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 47,
+    "fields": {
+      "name": "choices"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 48,
+    "fields": {
+      "name": "apathy"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 49,
+    "fields": {
+      "name": "inspirational"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 50,
+    "fields": {
+      "name": "change"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 51,
+    "fields": {
+      "name": "age"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 52,
+    "fields": {
+      "name": "learning"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 53,
+    "fields": {
+      "name": "miracle"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 54,
+    "fields": {
+      "name": "integrity"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 55,
+    "fields": {
+      "name": "fear"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 56,
+    "fields": {
+      "name": "planning"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 57,
+    "fields": {
+      "name": "reading-books"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 58,
+    "fields": {
+      "name": "good"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 59,
+    "fields": {
+      "name": "faith"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 60,
+    "fields": {
+      "name": "comedy"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 61,
+    "fields": {
+      "name": "knowledge"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 62,
+    "fields": {
+      "name": "drug"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 63,
+    "fields": {
+      "name": "imagination"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 64,
+    "fields": {
+      "name": "seuss"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 65,
+    "fields": {
+      "name": "tea"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 66,
+    "fields": {
+      "name": "literature"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 67,
+    "fields": {
+      "name": "dreaming"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 68,
+    "fields": {
+      "name": "lies"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 69,
+    "fields": {
+      "name": "simile"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 70,
+    "fields": {
+      "name": "failure"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 71,
+    "fields": {
+      "name": "friendship"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 72,
+    "fields": {
+      "name": "elizabeth-bennet"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 73,
+    "fields": {
+      "name": "opposite"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 74,
+    "fields": {
+      "name": "grown-ups"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 75,
+    "fields": {
+      "name": "women"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 76,
+    "fields": {
+      "name": "miracles"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 77,
+    "fields": {
+      "name": "the-hunger-games"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 78,
+    "fields": {
+      "name": "insanity"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 79,
+    "fields": {
+      "name": "paraphrased"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 80,
+    "fields": {
+      "name": "friends"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 81,
+    "fields": {
+      "name": "misattributed-to-c-s-lewis"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 82,
+    "fields": {
+      "name": "religion"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 83,
+    "fields": {
+      "name": "peace"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 84,
+    "fields": {
+      "name": "write"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 85,
+    "fields": {
+      "name": "thinking"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 86,
+    "fields": {
+      "name": "difficult"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 87,
+    "fields": {
+      "name": "regrets"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 88,
+    "fields": {
+      "name": "classic"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 89,
+    "fields": {
+      "name": "humor"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 90,
+    "fields": {
+      "name": "love"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 91,
+    "fields": {
+      "name": "bilbo"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 92,
+    "fields": {
+      "name": "wander"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 93,
+    "fields": {
+      "name": "lost"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 94,
+    "fields": {
+      "name": "adventure"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 95,
+    "fields": {
+      "name": "fairytales"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 96,
+    "fields": {
+      "name": "connection"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 97,
+    "fields": {
+      "name": "mistakes"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 98,
+    "fields": {
+      "name": "abilities"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 99,
+    "fields": {
+      "name": "attributed-no-source"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 100,
+    "fields": {
+      "name": "death"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 101,
+    "fields": {
+      "name": "read"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 102,
+    "fields": {
+      "name": "inspiration"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 103,
+    "fields": {
+      "name": "girls"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 104,
+    "fields": {
+      "name": "self-indulgence"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 105,
+    "fields": {
+      "name": "heartbreak"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 106,
+    "fields": {
+      "name": "authors"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 107,
+    "fields": {
+      "name": "jane-austen"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 108,
+    "fields": {
+      "name": "writing"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 109,
+    "fields": {
+      "name": "plans"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 110,
+    "fields": {
+      "name": "better-life-empathy"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 111,
+    "fields": {
+      "name": "lack-of-friendship"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 112,
+    "fields": {
+      "name": "thought"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 113,
+    "fields": {
+      "name": "indifference"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 114,
+    "fields": {
+      "name": "understand"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 115,
+    "fields": {
+      "name": "misattributed-john-lennon"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 116,
+    "fields": {
+      "name": "dreams"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 117,
+    "fields": {
+      "name": "attributed"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 118,
+    "fields": {
+      "name": "hate"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 119,
+    "fields": {
+      "name": "sisters"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 120,
+    "fields": {
+      "name": "misattributed-mark-twain"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 121,
+    "fields": {
+      "name": "christianity"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 122,
+    "fields": {
+      "name": "sun"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 123,
+    "fields": {
+      "name": "activism"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 124,
+    "fields": {
+      "name": "misattributed-to-mother-teresa"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 125,
+    "fields": {
+      "name": "wisdom"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 126,
+    "fields": {
+      "name": "poetry"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 127,
+    "fields": {
+      "name": "music"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 128,
+    "fields": {
+      "name": "books"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 129,
+    "fields": {
+      "name": "reading"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 130,
+    "fields": {
+      "name": "chocolate"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 131,
+    "fields": {
+      "name": "travel"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 132,
+    "fields": {
+      "name": "contentment"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 133,
+    "fields": {
+      "name": "god"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 134,
+    "fields": {
+      "name": "unhappy-marriage"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 135,
+    "fields": {
+      "name": "hope"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 136,
+    "fields": {
+      "name": "beatles"
+    }
+  },
+  {
+    "model": "quotesapp.tag",
+    "pk": 137,
+    "fields": {
+      "name": "readers"
+    }
+  }
+]

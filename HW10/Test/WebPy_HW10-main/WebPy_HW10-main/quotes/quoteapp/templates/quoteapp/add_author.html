@@ -1,0 +1,22 @@
+{% extends 'quoteapp/base.html' %}
+
+{% block content %}
+  <h2>Add Author</h2>
+<form action="{% url 'quoteapp:add_author' %}" method="post">
+    {% csrf_token %}
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+    <br><br>
+    <label for="born_date">Born Date:</label>
+    <input type="date" id="born_date" name="born_date" required>
+    <br><br>
+    <label for="born_location">Born Location:</label>
+    <input type="text" id="born_location" name="born_location" required>
+    <br><br>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+    <br><br>
+    <input type="submit" value="Add Author">
+</form>
+<li><a href="/" role="custom-button">Back to the list of quotes</a></li>
+{% endblock %}

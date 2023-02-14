@@ -1,0 +1,12 @@
+{% extends "quoteapp/base.html" %}
+
+{% block content %}
+    <h1>New Quote:</h1>
+    <p>Quote: {{ quote.quote }}</p>
+    <p>Author: {{ quote.author.fullname }}</p>
+    <p>Tags:
+    {% for tag in quote.tags.all %}
+        {{ tag.name }}{% if not forloop.last %}, {% endif %}
+    {% endfor %}</p>
+    <a href="{% url 'quoteapp:create_quote' %}">Back to quote list</a>
+{% endblock %}

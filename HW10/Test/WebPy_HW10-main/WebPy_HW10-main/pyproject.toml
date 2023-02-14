@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "webpy-hw10"
+version = "0.1.0"
+description = ""
+authors = ["none"]
+readme = "README.md"
+packages = [{include = "webpy_hw10"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.1.6"
+pymongo = "^4.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

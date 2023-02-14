@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Organizer</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"/>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'quoteapp/style.css' %}">
+</head>
+<body>
+<header>
+  <h1>Quotes to Scrape</h1>
+  <ul style="display: flex; justify-content: flex-end;">
+    <li style="margin-right: 2em;">
+      <a href="{% url 'users:signup' %}" role="custom-button">Sign Up</a>
+    </li>
+    <li style="margin-right: 2em;">
+      <a href="{% url 'users:login' %}" role="custom-button">Login</a>
+    </li>
+    <li style="margin-right: 2em;">
+      <a href="{% url 'users:profile' %}" role="custom-button">Home</a>
+    </li>
+  </ul>
+</header>
+
+  <main class="container">
+    {% for quote in quotes %}
+        <p>Quote: {{ quote.quote }}</p>
+        <p>Author: {{ quote.author.fullname }}</p>
+        <p>Tags: {% for tag in quote.tags.all %}{{ tag.name }}{% if not forloop.last %}, {% endif %}<br>{% endfor %}</p>
+    {% endfor %}
+
+  </main>
+     <nav>
+      <ul class='pager'>
+        <li class="next">
+          <a href="/page/2/">Next <span aria-hidden="true">-></span></a>
+        </li>
+      </ul>
+</nav>
+</body>
+    <footer style="display: flex; flex-direction: row;">
+        <div class="footer-right" style="flex-basis: 50%;">
+            <h3>Top Ten Quotes</h3>
+            <ul>
+                <li>"... quote 1 ..."</li>
+                <li>"... quote 2 ..."</li>
+                <li>"... quote 3 ..."</li>
+            </ul>
+
+    </div>
+
+    </footer>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                Quotes by: <a href="https://www.goodreads.com/quotes">GoodReads.com</a>
+            </p>
+        </div>
+    </footer>
+
+</html>
