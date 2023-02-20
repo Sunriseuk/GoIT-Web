@@ -1,10 +1,11 @@
-from fastapi import FastAPI, HTTPException, Depends, Path
-from sqlalchemy import create_engine
+from fastapi import FastAPI, HTTPException, Depends, Path, Query
+from sqlalchemy import create_engine, extract
 from sqlalchemy.orm import declarative_base, sessionmaker, Session
 from sqlalchemy import Column, Integer, String, Date
 from datetime import date, timedelta
 from typing import List, Optional
 from pydantic import BaseModel, EmailStr
+from datetime import datetime, timedelta
 
 # создание приложения FastAPI
 from starlette import status
@@ -119,7 +120,7 @@ def update_contact(body: ContactSchema, contact_id: int = Path(1, ge=1), db: Ses
     db.refresh(contact)
     return contact
 
-
+# функция для удаления контактов
 @app.delete("/contacts/{contact_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_contact(contact_id: int = Path(1, ge=1), db: Session = Depends(get_db)):
     contact = db.query(Contact).filter_by(id=contact_id).first()
@@ -132,12 +133,12 @@ def delete_contact(contact_id: int = Path(1, ge=1), db: Session = Depends(get_db
 
 # функция для поиска контактов по имени, фамилии или адресу электронной почты
 @app.get("/contacts/search/", response_model=List[ContactSchema])
-def search_contacts(first_name: Optional[str] = None, last_name: Optional[str] = None,
-                    email: Optional[str] = None, db: Session = Depends(get_db)):
+def search_contacts(query: Optional[str] = Query(None, min_length=1), db: Session = Depends(get_db)):
+    search_query = f"%{query}%" if query else "%"
     contacts = db.query(Contact).filter(
-        (Contact.first_name.ilike(first_name) if first_name else True) &
-        (Contact.last_name.ilike(last_name) if last_name else True) &
-        (Contact.email.ilike(email) if email else True)
+        (Contact.first_name.ilike(search_query)) |
+        (Contact.last_name.ilike(search_query)) |
+        (Contact.email.ilike(search_query))
     ).all()
     return contacts
 
@@ -147,7 +148,10 @@ def search_contacts(first_name: Optional[str] = None, last_name: Optional[str] =
 def get_contacts_birthday(db: Session = Depends(get_db)):
     today = date.today()
     end_date = today + timedelta(days=7)
-    contacts = db.query(Contact).filter((Contact.birthday >= today) & (Contact.birthday <= end_date)).all()
+    contacts = db.query(Contact).filter(
+        (extract('month', Contact.birthday) == today.month) & (extract('day', Contact.birthday) >= today.day)
+        & (extract('month', Contact.birthday) == end_date.month) & (extract('day', Contact.birthday) <= end_date.day)
+    ).all()
     return [
         ContactBirthday(
             id=contact.id,
@@ -157,3 +161,4 @@ def get_contacts_birthday(db: Session = Depends(get_db)):
         )
         for contact in contacts
     ]
+
